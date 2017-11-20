@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="wvajs">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+<title>IBM | Cognitive Virtual Agent</title>
+<link rel='shortcut icon' href='images/favicon_watson.ico'
+	type='image/x-icon' />
+<!-- CSS  -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	rel="stylesheet">
+<link
+	href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+	rel="stylesheet">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link href="css/materialize.css" type="text/css" rel="stylesheet"
+	media="screen,projection" />
+<link href="css/style.css" type="text/css" rel="stylesheet"
+	media="screen,projection" />
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/jqcloud/1.0.4/jqcloud.css">
+<script
+	src="https://get.carrotsearch.com/foamtree/demo/carrotsearch.foamtree.js"></script>
+<script
+	src="https://get.carrotsearch.com/foamtree/latest/demos/assets/js/hammer.min.js"></script>
+<script
+	src="https://get.carrotsearch.com/foamtree/latest/demos/assets/js/carrotsearch.jsonp.js"></script>
+<script
+	src="https://get.carrotsearch.com/foamtree/latest/demos/assets/js/tooltip.min.js"></script>
+
+
+<LINK rel="stylesheet" type="text/css"
+	href="https://get.carrotsearch.com/foamtree/latest/demos/assets/css/tooltip.css">
+
+
+
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<meta property="og:image"
+	content="http://logok.org/wp-content/uploads/2014/06/IBM-logo-blue.png" />
+
+<meta charset="utf-8" />
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.bundle.js"></script>
+<script type="text/javascript" src="angular/lib/angular/angular.min.js"></script>
+<script
+	src="https://cdn.rawgit.com/Luegg/angularjs-scroll-glue/master/src/scrollglue.js"></script>
+<script type="text/javascript"
+	src="angular/lib/angular/angular-messages.js"></script>
+<script type="text/javascript" src="angular/lib/lodash.js"></script>
+<script type="text/javascript"
+	src="angular/lib/angular-ui/ui-bootstrap-custom-tpls-0.10.0.min.js"></script>
+<script type="text/javascript"
+	src="angular/lib/angular/angular-cookies.min.js"></script>
+<script type="text/javascript" src="angular/lib/angular/restangular.js"></script>
+<script type="text/javascript" src="angular/js/app.js"></script>
+<script type="text/javascript" src="angular/js/directives/directives.js"></script>
+<script type="text/javascript"
+	src="angular/js/services/applicationService.js"></script>
+<script type="text/javascript"
+	src="angular/js/controllers/applicationCtrl.js"></script>
+<script src="js/md5.js"></script>
+
+<script>
+	function getColor() {
+		chartColors = [ 'rgb(255, 99, 132)', 'rgb(255, 159, 64)',
+				'rgb(255, 205, 86)', 'rgb(75, 192, 192)', 'rgb(54, 162, 235)',
+				'rgb(153, 102, 255)', 'rgb(231,233,237)' ];
+		randomColorFactor = function() {
+			return (Math.random() > 0.5 ? 1.0 : 1.0)
+					* Math.round(Math.random() * 6);
+		}
+		return chartColors[randomColorFactor()];
+	}
+</script>
+</head>
+
+<body>
+	<nav class="dark-blue lighten-1"
+		style="background-color: #f4f4f4; height: 74px;" role="navigation">
+		<div class="nav-wrapper container">
+			<a id="logo-container" href="index.html" class="brand-logo"><img
+				style="height: 16%; width: 90px;" src="images/logo.png" /></a> <span
+				style="margin-left: 80px;"""><span
+				style="color: #27c4f3; font-size: 20px;">IBM</span> <span
+				style="color: #2ab574; font-size: 20px;">Cognitive</span> <span
+				style="color: #0094ad; font-size: 20px;">Platform</span></span>
+			<ul class="right hide-on-med-and-down">
+				<li><a href="#"><i class="material-icons"
+						style="color: rgb(34, 176, 75); text-decoration: none;">perm_identity</i></a></li>
+				<li><a href="#"><i class="material-icons"
+						style="color: rgb(34, 176, 75);">settings_input_composite</i></a></li>
+
+			</ul>
+
+			<ul id="nav-mobile" class="side-nav">
+				<li><a href="#">Navbar Link</a></li>
+			</ul>
+			<a href="#" data-activates="nav-mobile" class="button-collapse"><i
+				class="material-icons">menu</i></a>
+		</div>
+	</nav>
+
+
+
+	<div ng-controller="smaController" id="SMACtrl">
+		<div style="background: ccc; height: 60px;" class="section no-pad-bot"
+			id="index-banner">
+			<div class="container">
+				<div class="row">
+					<div class="col s12">
+						<ul>
+							<li class="tab col s3"
+								style="border-bottom: 2px solid rgb(34, 176, 75);"><a
+								href="sma.html"
+								style="color: rgb(34, 176, 75); padding-left: 15%;">Brand
+									Analysis</a></li>
+							<li class="tab col s3 disabled"
+								style="border-bottom: 2px solid rgba(0, 0, 0, 0.3);"><a
+								href="login.html"
+								style="color: rgba(0, 0, 0, 0.5); padding-left: 15%;">
+									Competitor Analysis</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="row">
+				<div id="sources" class="col m3" style="padding: .25rem 1rem 1rem;">
+					<h6 style="color: gray;">
+
+						<span class="center-align">Web Sources</span>
+					</h6>
+					<p id="sources-chart-header"></p>
+					<canvas height=300 id="sources-chart"></canvas>
+				</div>
+				<div style="color: gray" id="sentiments" class="col m3"
+					style="padding: .25rem 1rem 1rem;">
+					<h6>
+						<span style="color: gray" class="center-align">Sentiments</span>
+					</h6>
+					<p id="sentiments-chart-header"></p>
+					<canvas height=300 id="sentiments-chart"></canvas>
+				</div>
+				<div style="color: gray" id="tones" class="col m3"
+					style="padding: .25rem 1rem 1rem;">
+					<h6>
+						<span class="center-align">Tones</span>
+					</h6>
+					<p id="tones-chart-header"></p>
+					<canvas height=300 id="tones-chart"></canvas>
+				</div>
+
+				<div class="col m3" style="padding: .25rem 1rem 1rem;">
+					<h6 style="color: gray;" class=" activator ">
+						<span class="center-align">Snippet</span>
+					</h6>
+					<div style="height: 300px; overflow: auto;" class="card">
+
+						<div class="card-content">
+
+							<div class="row" style="background: white;"
+								ng-repeat="obj in snippets">
+								<p>
+									<i style="color: #3b5998;" class="{{obj.style}}"></i> &nbsp;<span
+										style="color: #27c4f3;">{{obj.text}}</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row" id="unstruct_row">
+				<div class="col m6 ">
+					<h6 style="color: gray;">
+						<span class="center-align">Entities</span>
+					</h6>
+					<p id="entities-chart-header"></p>
+				</div>
+				<div class="col m5">
+					<h6 style="color: gray;">
+						<span class="center-align">Concepts</span>
+					</h6>
+					<p id="concepts-chart-header"></p>
+				</div>
+				<!-- <div id="keywords" class="col m5" height="500"
+					style="padding: .25rem 1rem 1rem; height: 500px;">
+					<h5 style="color: rgba(0, 0, 0, 0);">Sources</h5>
+					<div height=300 id="keywords-chart"></div>
+				</div> -->
+			
+
+
+				<div class="col m6">
+				<!-- 	<h6>
+						<span style="color: gray" class="center-align">Entities</span>
+					</h6>
+					<p id="entities-chart-header"></p> -->
+					<style>
+.tooltip {
+	z-index: 100
+}
+
+.hierarchical_keywords {
+	z-index: 1
+}
+</style>
+
+					<script
+						src="https://get.carrotsearch.com/foamtree/demo/carrotsearch.foamtree.js"></script>
+					<script
+						src="https://get.carrotsearch.com/foamtree/latest/demos/assets/js/hammer.min.js"></script>
+					<script
+						src="https://get.carrotsearch.com/foamtree/latest/demos/assets/js/carrotsearch.jsonp.js"></script>
+					<script
+						src="https://get.carrotsearch.com/foamtree/latest/demos/assets/js/tooltip.min.js"></script>
+
+					<style>
+body, html {
+	position: relative;
+	height: 100%;
+	margin: 0;
+}
+
+/** Set some preferred visualization size, but cap it to the maximum screen size */
+#fail_Cluster {
+	width: 600px;
+	height: 400px;
+	max-width: 100%;
+	max-height: 100%;
+}
+</style>
+
+
+					<div id="fail_Cluster">
+						<script>
+							var foamtree1;
+							var level0, level1, level2 = {};
+
+							function format(n) {
+								return n
+										.toFixed(0)
+										.replace(
+												/./g,
+												function(c, i, a) {
+													return i > 0
+															&& c !== "."
+															&& (a.length - i) % 3 === 0 ? ","
+															+ c
+															: c;
+												});
+							}
+
+							var counter = 0;
+
+							var tooltip = (function() {
+								var tip = new Tooltip("Test", {
+									auto : true
+								});
+								var shown = false;
+								var timeout;
+								var lastShownPageX, lastShownPageY;
+								var pageX, pageY;
+								var currentGroup;
+
+								function hide() {
+									tip.hide();
+									shown = false;
+									window.clearTimeout(timeout);
+								}
+
+								function show() {
+									if (currentGroup && currentGroup.label) {
+										// Set some example content on the tooltip.
+										tip.content("<b>Name:</b> "
+												+ currentGroup.label + "<br/>"
+												+ "<b>Value:</b>"
+												+ format(currentGroup.weight));
+										tip.position(pageX, pageY);
+										tip.show();
+										lastShownPageX = pageX;
+										lastShownPageY = pageY;
+										shown = true;
+									}
+								}
+
+								function group(g) {
+									currentGroup = g;
+								}
+
+								// Register a mouse move listener that will show and hide the tooltip.
+								document.body
+										.addEventListener(
+												"mousemove",
+												function(e) {
+													pageX = e.pageX;
+													pageY = e.pageY;
+
+													// Hide if the mouse pointer gets farther than 10px from the last tooltip location
+													if (shown
+															&& Math
+																	.sqrt(Math
+																			.pow(
+																					pageX
+																							- lastShownPageX,
+																					2)
+																			+ Math
+																					.pow(
+																							pageY
+																									- lastShownPageY,
+																							2)) > 10) {
+														hide();
+													}
+
+													// Show the tooltip after the pointer stops for some time
+													window
+															.clearTimeout(timeout);
+													timeout = window
+															.setTimeout(show,
+																	500)
+												});
+
+								return {
+									group : group,
+									hide : hide
+								};
+							})();
+
+							foamtree1 = new CarrotSearchFoamTree(
+									{
+										// Identifier of the HTML element defined above
+										id : "fail_Cluster",
+										pixelRatio : window.devicePixelRatio || 1,
+										relaxationInitializer : "treemap",
+										relaxationVisible : false,
+										relaxationQualityThreshold : 5,
+										rolloutDuration : 0,
+										pullbackDuration : 0,
+										finalCompleteDrawMaxDuration : 50,
+										finalIncrementalDrawMaxDuration : 20,
+										attributionText : "Kia Masla hai",
+										attributionLogo : "http://9.51.154.45:8080/AppBuilder/favicon.ico",
+										attributionURL : "http://9.51.154.45:8080/AppBuilder/favicon.ico",
+
+										onGroupHover : function(event) {
+											// Tell the tooltip which group is currently hovered on
+											tooltip.group(event.group);
+
+										},
+
+										onGroupSelectionChanging : function(
+												event) {
+
+											if (event.selected) {
+												if (event.group.level == 0) {
+
+													entitiesEvt(event.group.label);
+													/*document
+															.getElementById('res_text1').innerHTML = '<a class=foam_link href="" onclick=addLevelZero()><font face="verdana" color="green"><strong>'
+															+ event.group.label
+															+ '</strong></font></a>'; */
+
+												}
+
+											}
+
+										},
+
+										// Hide the tooltip on zoom, open/close and expose
+										onGroupMouseWheel : tooltip.hide,
+										onGroupExposureChanging : tooltip.hide,
+										onGroupOpenOrCloseChanging : tooltip.hide,
+
+										// Never display the title bar
+										maxLabelSizeForTitleBar : 0,
+
+										// Some data to visualize.
+										dataObject : {
+											groups :
+
+											[ {
+												label : "Loading...",
+												level : 0,
+												weight : 1
+											} ]
+										}
+									});
+						</script>
+
+					</div>
+				</div>
+				<div id="concepts" class="col m5" height="500"
+					style="padding: .25rem 1rem 1rem; height: 500px;">
+					<h5 style="color: rgba(0, 0, 0, 0);">Sources</h5>
+					<div height=300 id="concepts-chart"></div>
+				</div>
+				
+			</div>
+			<!-- 
+			<div style="color: gray" id="trends" class="col m6"
+					style="padding: .25rem 1rem 1rem;">
+					<h6>
+						<span class="center-align">Trends</span>
+					</h6>
+					
+						<select  id="trendSelect" style="width:40px;">
+							<option value="concepts">Concepts</option>
+							<option value="entities">Entities</option>
+							
+
+						</select> 
+				
+
+					<canvas height=300 id="trends-chart"></canvas>
+				</div>
+			
+				<div class="row">
+					<div id="sources" class="col m3" style="padding: .25rem 1rem 1rem;">
+						<h6 style="color:gray;">Web Sources</h6>
+						<canvas height=300 id="sources-chart"></canvas>
+					</div>
+					<div id="locations" class="col m3"
+						style="padding: .25rem 1rem 1rem;">
+						<h6 style="color:gray;">Locations</h6>
+						<canvas height=300 id="locations-chart"></canvas>
+					</div>
+					<div id="entities" class="col m5"
+						style="padding: .25rem 1rem 1rem;">
+						<h6 style="color:gray;">Entities</h6>
+						<canvas height=300 id="entities-chart"></canvas>
+					</div>
+
+				</div>
+				-->
+
+
+
+
+		</div>
+	</div>
+
+	<!--  Scripts-->
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/jqcloud/1.0.4/jqcloud-1.0.4.min.js"></script>
+	<script src="js/materialize.js"></script>
+	<script src="js/init.js"></script>
+	<script type="text/javascript" src="js/d3_charts.js"></script>
+</body>
+<script>
+	$(document).ready(function() {
+		$('select').material_select();
+	});
+
+	$("#trendSelect").on('change', function() {
+		var trendValue = $("#trendSelect").val()
+		if (trendValue + "" == "concepts") {
+			updateTrends(trendsDataSet, trendLabels);
+		} else {
+
+			updateTrends(entitiestrendsDataSet, trendLabels);
+		}
+	});
+	$(".select-wrapper").attr('ng-change', 'updateTrends()');
+	
+	console.log("table name is...");
+	console.log();
+	if(localStorage.tablename== undefined){
+		window.location.href = "index.html";
+	}
+	
+	
+</script>
+</html>

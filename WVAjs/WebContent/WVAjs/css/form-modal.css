@@ -1,0 +1,84 @@
+.mv-big-modal .modal-header{ padding: 0px !important; }
+.mv-form-container{float:left;margin-top: 10px;width:100%;position:relative;}
+.mv-body-heading h2{color: white !important;font-size: 26px;margin-top: 5px;font-weight:bold;}
+.modal .input-prepend > .add-on {top: 2px;position: relative;}
+.mv-cancel{margin-right: 20px;margin-top: 5px;font-weight:300;font-size:.875rem;}
+.field-encapsulate{ padding: 0px 30px 0px 50px; }
+.mv-image-upload{ margin:0px; color: white; font-weight: 300;}
+.mv-button-blue{ background-color: #008ccc; color: white; padding: 8px 40px; cursor: pointer; text-transform: uppercase; }
+.modal-close-cross{ position:absolute; right: 8px; top: 8px; z-index: 1111; color: #929292; font-size: 13px; cursor: pointer; }
+.modal .input-block-level{ margin-bottom: 0px !important; }
+.modal .field-container{ padding-bottom: 15px;  /* making vertical gaps even */ }
+.two-field-container input{ 	width: calc(50% - 7px); }
+.paneControl{ 	text-align: center; 	width:100%; }
+.paneDot{ 	margin:0; 	display: inline-block; }
+.paneDot li{ 	  display: inline-block; 	  border: 1px solid white; 	  border-radius: 8px; 	  list-style: none; 	  height: 10px; 	  width: 10px; 	  cursor: pointer; }
+.moveRight, .moveLeft, .moveMiddle{ 	  margin-top: -2px; 	  font-size:18px; 	  color:white; 	  cursor: pointer; }
+.moveLeft{ 	float:left; 	position:absolute; 	left:10px; 	bottom: 28px; }
+.moveRight{ 	float:right; 	position:absolute; 	right:10px; 	bottom: 28px; }
+.moveMiddle{ 	float:right; }
+.whitedot{ 	background-color:white; }
+
+.inputPrompt.modal .modal-dialog { -webkit-transform: translate(0, 15%) !important; -ms-transform: translate(0, 15%) !important; -o-transform: translate(0, 15%) !important; transform: translate(0, 15%) !important; }
+@media (max-height: 900px){ .inputPrompt.modal .modal-dialog { -webkit-transform: translate(0, -2%) !important; -ms-transform: translate(0, -2%) !important; -o-transform: translate(0, -2%) !important; transform: translate(0, -2%) !important; }}
+.inputPrompt .modal-dialog{ max-width:880px; width:100%; min-width:750px;}
+.inputPrompt .modal-dialog{ margin: 30px auto; }
+.inputPrompt .modal-header{ border-bottom: 0px !important; }
+
+.modal-content * .info, .modal-content * .error {color:#fff !important; }
+.modal-content {background-color:#fafafa;}
+.inputPrompt .modal-content {width:100%; }
+
+.mv-help-container{float:left;width:208px;padding:30px 10px;clear:right;}
+.mv-help-container h2{color: #929292;font-size: 26px;padding-bottom: 5px;font-weight:bold;}
+.mv-help-container p{color: #666;font-size:.1.3rem;}
+
+.mv-modal-body {padding:30px 15px 30px 20px; background-color:#0096D1; float: left; }
+.inputPrompt .mv-modal-body {width:calc(100% - 263px);}
+
+
+.left-block{float:left;width: 110px;}
+.right-block {float:left;width: calc(100% - 110px);}
+.right-block input, textarea{ font-size: 13px !important; font-weight: 300 !important; border-radius: 5px; }
+.right-block .typeahead-search .icon:before{ top: 6px !important; }
+
+.mv-modal-footer{clear: both;text-align: right;}
+.left-footer{ float:left; }
+
+.slideContainer {width:100%;overflow:hidden;white-space: nowrap;}
+.slideContainer .pane{ 	display: inline-block; 	vertical-align: top; 	width:100%; }
+
+.input-block-level {display: block; margin-bottom: 10px; width: 100%; }
+input, select {height: 34px; }
+input, select, textarea {background: #fff none repeat scroll 0 0; border: 1px solid #bcbec0; border-radius: 3px !important; font-family: inherit; font-size: 0.875rem; font-weight: 300; line-height: 20px; outline: 0 none; padding: 7px 5px; transition: border-color 0.25s ease 0s;}
+input, input[type="checkbox"], input[type="radio"], textarea {box-sizing: border-box;}
+button, input {line-height: normal;}
+input, textarea { color: #000000; font-family: Lato,Helvetica,sans-serif; font-weight: 300; }
+
+
+.modal-mv{ height: 230px; background-color: #57BFE3; }
+
+.mv-input-label {color: white;}
+
+/**************** Select drop down styles *******************/
+.modal select { padding:8px; margin: 0; -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px; background: white; color:#888; font-size: 13px !important; font-weight: 300; border:none; outline:none; display: inline-block; -webkit-appearance:none; -moz-appearance:none; appearance:none; cursor:pointer; }
+.mv-select label {position:relative}
+.mv-checkbox-label{ margin-left:25px; font-size:13px; color:white; font-weight:300; }
+/*
+.mv-select label:after { content:''; font:11px "Consolas", monospace; color:#FFF;-webkit-transform:rotate(90deg); -moz-transform:rotate(90deg); -ms-transform:rotate(90deg); transform:rotate(90deg); right:8px; top:2px; padding:0 0 2px; border-bottom:1px solid #ddd; position:absolute; pointer-events:none; }
+.mv-select label:before { content: "▼"; right: 0px;height:70%;top: -8px;padding: 8px 12px 8px 8px;line-height:18px; background: white; position: absolute; pointer-events: none; display: block; color: #A0A0A0; font-size: 9px; border-left: 1px solid #57BFE3; }
+@-moz-document url-prefix() { .mv-select label:before{ right: -14px; top: -8px; padding: 11px; border-bottom-right-radius: 5px; border-top-right-radius: 5px; font-size: 10px; } }
+ */
+/**************** Checkbox Styles ****************/
+.mv-modal-checbox { position: relative; }
+.mv-modal-checbox label { cursor: pointer; position: absolute; width: 20px; height: 20px; top: 2px; border-radius: 4px; -webkit-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5); -moz-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5); box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5); background: #fcfff4; background: -webkit-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%); background: -moz-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%); background: -o-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%); background: -ms-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%); background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 ); }
+.mv-modal-checbox label:after { -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter: alpha(opacity=0); opacity: 0; content: ''; position: absolute; width: 9px; height: 5px; background: transparent; top: 4px; left: 4px; border: 3px solid #333; border-top: none; border-right: none; -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -o-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg); }
+.mv-modal-checbox label:hover::after { -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)"; filter: alpha(opacity=30); opacity: 0.5; }
+.mv-modal-checbox input[type="checkbox"]{ display: none; visibility: hidden; }
+.mv-modal-checbox input[type=checkbox]:checked + label:after { -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; filter: alpha(opacity=100); opacity: 1; }
+
+/* Targetting Webkit browsers only. FF will show the dropdown arrow with so much padding. */
+@media screen and (-webkit-min-device-pixel-ratio:0) { .modal select {padding-right:18px} }
+
+/* label */
+.mv-label {font-size:13px; color:white; font-weight:300;}

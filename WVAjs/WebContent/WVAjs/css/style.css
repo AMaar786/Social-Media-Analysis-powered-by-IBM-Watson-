@@ -1,0 +1,178 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+cursor: url('cursor.cur'), auto;
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+.loading
+{
+
+    position: relative;;
+    left: 50%;
+    top: 50%;
+    background-color: white;
+    z-index: 100;
+   padding:0px;
+    margin-top: -189px;
+    z-index: 1;
+    margin-left: -500px;
+}
+.progress-tab{
+	height:1.2em;
+	width:.6em; 
+	background:#41d6c3; 
+	margin-top:25px;
+	margin-left:5px;
+	
+}
+.progress-tab:hover{
+	
+	background:#41d6c3; 
+	opacity: 0.6;
+}
+
+.progress-tab-empty:hover{
+	
+	background:#D3D3D3; 
+}
+.progress-tab-empty{
+	height:1.2em;
+	width:.6em; 
+	background:#dfe9e9; 
+	margin-top:25px;
+	margin-left:5px;
+	
+}
+
+.message-inner {
+  opacity: 1;
+  margin-top: 0.9375rem;
+  -webkit-transition-property: opacity, margin-top;
+  -webkit-transition-duration: 0.75s;
+  -webkit-transition-timing-function: ease-in;
+  -moz-transition-property: opacity, margin-top;
+  -moz-transition-duration: 0.75s;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-property: opacity, margin-top;
+  -o-transition-duration: 0.75s;
+  -o-transition-timing-function: ease-in;
+  -ms-transition-property: opacity, margin-top;
+  -ms-transition-duration: 0.75s;
+  -ms-transition-timing-function: ease-in;
+  transition-property: opacity, margin-top;
+  transition-duration: 0.75s;
+  transition-timing-function: ease-in;
+}
+
+.load .message-inner {
+  opacity: 1;
+  margin-top: 0.3125rem;
+}
+
+.from-user {
+  text-align: right;
+  margin-right:20px;
+}
+
+.from-user .message-inner {
+  position: relative;
+  font-size: 1rem;
+  color: #fff;
+  letter-spacing: 0.015rem;
+  line-height: 1.3125rem;
+  background: #00B4A0;
+  border-radius: 1.25rem;
+  border-bottom-right-radius: 0;
+  text-align: left;
+  display: inline-block;
+  margin-left: 2.5rem;
+  min-width: 2.5rem;
+}
+
+.from-user .message-inner p {
+  margin: 0.3125rem;
+  padding: 0 0.9375rem;
+}
+
+.from-user .message-inner:before, .from-user .message-inner:after {
+  content: "";
+  position: absolute;
+}
+
+
+.from-user .message-inner:before {
+  z-index: -2;
+  bottom: -0.375rem;
+  right: 0;
+  height: 0.375rem;
+  width: 0.5rem;
+  background: #1cb3a0;
+}
+
+.from-user .message-inner:after {
+  z-index: -1;
+  bottom: -0.5rem;
+  right: 0;
+  height: 0.5rem;
+  width: 0.5rem;
+  background: #fff;
+  border-top-right-radius: 1.25rem;
+}
+
+.from-watson .message-inner {
+  position: relative;
+  border-radius: 1.5625rem;
+  font-size: 1rem;
+  color: #B5B5B5;
+  letter-spacing: 0.015rem;
+  line-height: 1.3125rem;
+}
+.from-watson.latest .message-inner {
+  color: #323232;
+}
+
+.from-watson p {
+  margin: 0.3125rem;
+  padding: 0 1.25rem;
+}
+
+.from-watson p:before {
+  content: ".";
+  color: #9855D4;
+  background-image: url("../images/marker_image.png");
+  background-size: 0.3125rem 1.3125rem;
+  position: absolute;
+  z-index: 2;
+  left: 0.4375rem;
+  width: 0.3125rem;
+  height: 1.3125rem;
+  line-height: 1.3125rem;
+}
+
+.arc text {
+  font: 10px sans-serif;
+  text-anchor: middle;
+}
+
+.arc path {
+  stroke: #fff;
+}
+
+.arc2 text {
+  font: 10px sans-serif;
+  text-anchor: middle;
+}
+
+.arc2 path {
+  stroke: #fff;
+}
+
+ 

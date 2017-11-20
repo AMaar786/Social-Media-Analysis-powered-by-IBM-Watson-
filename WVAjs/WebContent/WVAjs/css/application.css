@@ -1,0 +1,366 @@
+.container-custom{
+	width:100%;
+	display:inline;
+	background-color:#ffffff;
+}
+
+.nav-left-custom{
+	width:15%;
+	float:left;
+	padding-right:15px;
+	background-color:#008CCC;
+}
+
+.nav-left-dashboard-custom{
+	width:3%;
+	margin-top: -20px;
+	float:left;
+	padding-right:15px;
+	background-color:#000000;
+}
+
+.img-header{
+	background-color:white;
+	border-radius: 3px;
+	width: 180px;
+	height: 34px;
+	margin-top: 2px;
+}
+
+.white-float-right{
+	color: white;
+	float: right;
+}
+
+.background-white{
+	background-color: White;
+}
+
+.main-panel-calendar{
+	float: right; 
+	color: #336699;
+}
+
+.dashboard-icon-menu{
+border-width: 1px;
+border-top-style: solid;
+border-bottom-style: solid;
+border-color: #161616 !important;
+}
+
+.row-custom{
+	margin-right: 2px;
+	margin-left: 0px;
+}
+
+.white{
+	color:white !important;
+	height: 50px;
+}
+
+.col-ssm-10{
+	width:83.33333333%
+}
+
+.nav-right-dashboard-custom{
+	width:81.5%;
+	float:left;
+	margin-left:3%;
+	margin-top:3%;
+	display:inline;
+	background:#fafafa
+}
+
+.nav-right-custom{
+	width:84%;
+	float:left;
+	margin-left:1%;
+	margin-top:1.5%;
+	display:inline;
+}
+
+.right-custom-panel{
+	width:100%;
+	display:inline;
+}
+
+.panel.panel-primary{
+	border: none;
+	width:50%;
+	float:left;
+}
+
+.panel.panel-primary-custom{
+	width:35%;
+	float:left;
+	margin-left:2%;
+	border-color: #DDD;
+	border-top-color: #DDD;
+	border-right-color: #DDD;
+	border-bottom-color: #DDD;
+	border-left-color: #DDD;
+}
+
+.panel.panel-primary-main-custom{
+	width:50%;
+	float:right;
+	margin-top:5px;
+	border-color: #fafafa;
+	border-top-color: #fafafa;
+	border-right-color: #fafafa;
+	border-bottom-color: #fafafa;
+	border-left-color: #fafafa;
+}
+
+
+.panel.panel-pending-bank-right-custom{
+	width:35%;
+	float:left;
+	margin-left:10px;
+	border-color: #DDD;
+	border-top-color: #DDD;
+	border-right-color: #DDD;
+	border-bottom-color: #DDD;
+	border-left-color: #DDD;
+}
+
+.panel-heading {
+	background-color: #fafafa !important;
+	border-color: #bdbdbd;
+	color: #000;
+	padding-bottom: 0.2px;
+	padding-left: 10px;
+	padding-top: 0.2px;
+}
+
+.panel.panel-custom{
+	border: none;
+	width:60%;
+	margin-left:10px;
+	float:left;
+}
+
+.panel-body-custom{
+	padding: 15px;
+	padding-top: 15px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	padding-left: 15px;
+	height:390px;
+	align-items:center;
+	justify-content:center;
+	background-color:#fafafa;
+}
+
+.panel-completed-body-custom{
+	padding: 15px;
+	padding-top: 15px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	padding-left: 15px;
+	height:280px;
+	align-items:center;
+	justify-content:center;
+	display:flex;
+	background-color:#fafafa;
+}
+
+.panel-completed-main-body-custom{
+	height:280px;
+	background-color:#fafafa;
+}
+
+.panel-default-custom{
+	border-color: #DDD;
+	border-top-color: #DDD;
+	border-right-color: #DDD;
+	border-bottom-color: #DDD;
+	border-left-color: #DDD;
+	width:60%;
+	margin-left:10px;
+	float:left;
+}
+
+.panel-default-main-custom{
+	border-color: #fafafa;
+	border-top-color: #fafafa;
+	border-right-color: #fafafa;
+	border-bottom-color: #fafafa;
+	border-left-color: #fafafa;
+	width:50%;
+	margin-top:5px;
+	float:left;
+}
+
+
+.panel-body-main-custom{
+	height:253px;
+	align-items:center;
+	justify-content:center;
+	display:flex;
+	background-color:#fafafa;
+}
+
+
+.panel-pending-bank-left-custom{
+	border-color: #DDD;
+	border-top-color: #DDD;
+	border-right-color: #DDD;
+	border-bottom-color: #DDD;
+	border-left-color: #DDD;
+	width:60%;
+	margin-left:2%;
+	float:left;
+}
+
+.panel-completed-custom{
+	border-color: #DDD;
+	border-top-color: #DDD;
+	border-right-color: #DDD;
+	border-bottom-color: #DDD;
+	border-left-color: #DDD;
+	float: right;
+	margin-right: 1.9%;
+	width: 81.5%;
+}
+
+.panel-completed-dashboard-custom{
+	border-color: #DDD;
+	border-top-color: #DDD;
+	border-right-color: #DDD;
+	border-bottom-color: #DDD;
+	border-left-color: #DDD;
+	display:block;
+	margin-left: 1%;
+	width: 100%;
+}
+
+.panel-completed-dashboard-body-custom{
+	padding-top: 15px;
+	padding-bottom: 15px;   
+	height:480px;
+	display:block;
+	background-color:White;
+}
+
+.panel-table{
+	height: 104%;
+    overflow-y: auto;
+	display:block;
+}
+
+.panel-completed-dashboard-body-custom1{
+	padding-top: 15px;
+	padding-bottom: 15px;
+	width:100%;
+	height:230px;
+	display:block;
+	background-color:#fafafa;
+	align-items:center;
+	justify-content:center;
+	display:flex;
+}
+
+.btn-custom{
+	display:inline-block;
+	padding:3px 6px;
+	margin-top:3px;
+	margin-bottom:3px;
+	margin-left:5px;
+	font-size:12px;
+	font-weight:400;
+	line-height:1.42857143;
+	text-align:center;
+	white-space:nowrap;
+	vertical-align:middle;
+	-ms-touch-action:manipulation;
+	touch-action:manipulation;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-image:none;
+	border:1px solid transparent;
+	border-radius:1px;
+}
+
+.btn-default-custom{
+	color:#333;
+	background-color:#fafafa;
+	border-color:#ccc
+}
+
+.divider-custom{
+	background-color:#e3e3e3;
+	clear: none;
+	height: 32px;
+	width: 1px;
+}
+
+.nav-dashboard>li.active>a,.nav-dashboard>li.active>a:focus,.nav-dashboard>li.active>a:hover{
+	text-decoration:none;
+	background-color:#FFF;
+	border-top-color:#57889c;
+	border-top-style:solid;
+	border-top-width:1px;
+}
+
+.nav-dashboard>li>a:focus,.nav-dashboard>li>a:hover{
+	text-decoration:none;
+	background-color:#FFF;
+	border-top-color:#57889c;
+	border-top-style:solid;
+	border-top-width:1px;
+}
+
+.cbms-portal-table{
+	width:33%;
+	float:left;
+}
+
+.portal-table-border{
+	border-right: solid #E3E7E8;
+	border-width: 1px;
+}
+
+.select-style {
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: #fff;
+	margin-bottom: 20px;
+    background: #fff url("http://www.scottgood.com/jsg/blog.nsf/images/arrowdown.gif") no-repeat 98% 50%;
+}
+
+.select-style select {
+    padding: 9px 8px;
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
+
+.border-bottom-left-panel{
+	border-bottom:1px solid #E0E0E0;
+}
+
+.select-style select:focus {
+    outline: none;
+}
+
+.nav-right-full-custom{
+	width:100%;
+	float:left;
+	margin-left:1%;
+	margin-top:1.5%;
+	display:inline;
+}
+
+.icon-remove-sign:before { content: "\f057"; }

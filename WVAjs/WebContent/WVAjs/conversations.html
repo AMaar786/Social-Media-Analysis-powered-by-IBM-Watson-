@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="wvajs">
+
+    <head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>IBM | Cognitive Virtual Agent</title>
+  <link rel='shortcut icon' href='images/favicon_watson.ico' type='image/x-icon'/>
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+ 
+		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>		
+		<script type="text/javascript" src="angular/lib/angular/angular.min.js"></script>
+		<script src="https://cdn.rawgit.com/Luegg/angularjs-scroll-glue/master/src/scrollglue.js"></script>
+		<script type="text/javascript" src="angular/lib/angular/angular-messages.js"></script>
+		<script type="text/javascript" src="angular/lib/lodash.js"></script>
+		<script type="text/javascript" src="angular/lib/angular-ui/ui-bootstrap-custom-tpls-0.10.0.min.js"></script>
+		<script type="text/javascript" src="angular/lib/angular/angular-cookies.min.js"></script>
+		<script type="text/javascript" src="angular/lib/angular/restangular.js"></script>
+		<script type="text/javascript" src="angular/js/app.js"></script>
+		<script type="text/javascript" src="angular/js/directives/directives.js"></script>
+		<script type="text/javascript" src="angular/js/services/applicationService.js"></script>
+		<script type="text/javascript" src="angular/js/controllers/applicationCtrl.js"></script>
+		<script src="js/md5.js"></script>
+		
+
+    </head>
+
+    <body>
+  <div ng-controller="conversationsCtrl">
+  
+  <nav class="dark-blue lighten-1" style="background-color: #f4f4f4; height:74px;" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo"><img style="height:16%;width:90px;" src="images/logo.png" /></a>
+     <span style=margin-left:80px;""><span style="color:#27c4f3; font-size: 20px;">IBM</span> <span style="color:#2ab574; font-size: 20px;">Cognitive</span> <span style="color:#0094ad; font-size: 20px;">Platform</span></span>
+      <ul class="right hide-on-med-and-down">
+        <li><a id="form_open" target="_blank"><i class="material-icons" style="color:rgb(34, 176, 75); text-decoration:none;">perm_identity</i></a></li>
+        <li><a href="#"><i class="material-icons" style="color:rgb(34, 176, 75);">settings_input_composite</i></a></li>
+        
+      </ul>
+	
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav> 
+ 
+    
+  
+ 
+  <div style="background:ccc;  height:60px;" class="section no-pad-bot" id="index-banner">
+    <div class="container">
+       <div class="row" >
+    <div  class="col s12">
+      <ul >
+        
+        <li class="tab col s3 disabled" style="border-bottom:2px solid rgba(0, 0,0,0.3);"><a href="login.html" style="color:rgba(0, 0,0,0.5); padding-left:15%; ">Virtual Agent</a></li>
+        <li class="tab col s3" style="border-bottom:2px solid rgb(34, 176, 75);"><a href="conversations.html" style="color:rgb(34, 176, 75); padding-left:15%; ">Conversations</a></li>
+        <li class="tab col s3 disabled" style="border-bottom:2px solid rgba(0, 0,0,0.3);"><a href="sma.html" style="color:rgba(0, 0,0,0.5); padding-left:15%; ">Social Media Analysis</a></li>
+      	
+      </ul>
+    </div>
+          </div>
+  </div>
+
+<div  class="container" style="margin-top:100px;">
+  <div class="row"  >
+  <div ng-bind-html="chatContent" id="chatBox" style="overflow: auto; height:310px;" scroll-glue>
+  
+  </div>
+  <a id="bottom"></a>
+ <!-- 
+ <div class="from-watson"><div  class="message-inner"><p>Can I get your phone number?</p></div></div>
+  <div class="from-user"><div class="message-inner"><p>03455482371</p></div></div>  -->
+    <form class="col s12" style=" padding: .25rem 1rem 1rem; ">
+      <div class="row">
+        <div class="input-field col s12" style="margin-bottom:-0.125rem; " >
+          <textarea message-enter="sendMessage()" ng-style="convoEndedBorder" ng-disabled="convoStatus()" style="color:#22B04B; border-bottom:1px solid #22B04B;padding-bottom: 0px;" ng-model="message.value" required="true" id="textarea2" class="materialize-textarea"></textarea>
+          <label for="textarea1" ng-style="convoEndedLabel" style="color:#22B04B;">Please enter your message</label>
+        </div>
+       
+        <div  class="col s2 offset-s10">
+           <div  class="loading" style="background: rgba(0,0,0,0); width: 300px;"  ng-show=" loadingStatus(); ">
+            <img src="images/loading.gif" style="height:70%;width:70%;"/>
+          </div>
+
+        </div>
+
+      </div>
+    </form>
+  </div>
+</div>
+<!-- <div class="row" style="margin:0px;padding:0px; margin-top:220px; background:black;">
+        <footer class="page-footer" style="background:black;">
+
+         
+            <div class="container" style="color:white;">
+            ©2016 IBM
+            <a class="grey-text text-lighten-4 right" href="#!"><img style="height:30px; width:60px;" src="images/ibm_logo.png"/></a>
+            </div>
+          
+        </footer>
+
+</div>  -->
+</div>
+</div>
+<!--  Scripts-->
+  
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+    
+    </body>
+
+</html>

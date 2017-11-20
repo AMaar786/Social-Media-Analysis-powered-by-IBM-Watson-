@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="wvajs">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+<title>IBM | Cognitive Virtual Agent</title>
+<link rel='shortcut icon' href='images/favicon_watson.ico'
+	type='image/x-icon' />
+<!-- CSS  -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	rel="stylesheet">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link href="css/materialize.css" type="text/css" rel="stylesheet"
+	media="screen,projection" />
+<link href="css/style.css" type="text/css" rel="stylesheet"
+	media="screen,projection" />
+
+
+<script type="text/javascript" src="angular/lib/angular/angular.min.js"></script>
+<script
+	src="https://cdn.rawgit.com/Luegg/angularjs-scroll-glue/master/src/scrollglue.js"></script>
+<script type="text/javascript"
+	src="angular/lib/angular/angular-messages.js"></script>
+<script type="text/javascript" src="angular/lib/lodash.js"></script>
+<script type="text/javascript"
+	src="angular/lib/angular-ui/ui-bootstrap-custom-tpls-0.10.0.min.js"></script>
+<script type="text/javascript"
+	src="angular/lib/angular/angular-cookies.min.js"></script>
+<script type="text/javascript" src="angular/lib/angular/restangular.js"></script>
+<script type="text/javascript" src="angular/js/app.js"></script>
+<script type="text/javascript" src="angular/js/directives/directives.js"></script>
+<script type="text/javascript"
+	src="angular/js/services/applicationService.js"></script>
+<script type="text/javascript"
+	src="angular/js/controllers/applicationCtrl.js"></script>
+<script src="js/md5.js"></script>
+
+
+</head>
+
+<body>
+
+
+	<nav class="dark-blue lighten-1"
+		style="background-color: #f4f4f4; height: 74px;" role="navigation">
+		<div class="nav-wrapper container">
+			<a id="logo-container" href="index.html" class="brand-logo"><img
+				style="height: 16%; width: 90px;" src="images/logo.png" /></a> <span
+				style="margin-left: 80px;"""><span
+				style="color: #27c4f3; font-size: 20px;">IBM</span> <span
+				style="color: #2ab574; font-size: 20px;">Cognitive</span> <span
+				style="color: #0094ad; font-size: 20px;">Platform</span></span>
+			<ul class="right hide-on-med-and-down">
+				<li><a href="#"><i class="material-icons"
+						style="color: rgb(34, 176, 75); text-decoration: none;">perm_identity</i></a></li>
+				<li><a href="#"><i class="material-icons"
+						style="color: rgb(34, 176, 75);">settings_input_composite</i></a></li>
+
+			</ul>
+
+			<ul id="nav-mobile" class="side-nav">
+				<li><a href="#">Navbar Link</a></li>
+			</ul>
+			<a href="#" data-activates="nav-mobile" class="button-collapse"><i
+				class="material-icons">menu</i></a>
+		</div>
+	</nav>
+
+
+
+	<div ng-controller="loginController">
+		
+		<div class="container" style="width: 30%;margin-top:10%">
+			    <div class="row">
+			        <div class="col-sm-6 col-md-4 col-md-offset-4">
+			            <div class="account-wall">
+			                <form class="form-signin">
+			                <input type="text" class="form-control" ng-model="user.username" placeholder="Email" required autofocus>
+			                <input type="password" class="form-control" ng-model="user.password" placeholder="Password" required>
+			                <p ng-if="uiMessage != ''" style="color: #26a69a;margin-top: 0px;">{{uiMessage}}</p>
+			                <button class="btn btn-lg btn-primary btn-block" type="submit" ng-click = "login();">
+			                    Sign in</button>
+			                </form>
+			            </div>
+			        </div>
+			    </div>
+	</div>
+
+		<!--  Scripts-->
+		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src="js/materialize.js"></script>
+		<script src="js/init.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+.prompt .modal-mv{ min-height: 230px; padding-bottom:10px; background-color: #57BFE3; }
+.prompt .modal-body-mv{  }
+.prompt .modal-content-mv h2{ padding-top: 40px; font-size: 1.8em; color: white; width: 400px; margin-left: auto; margin-right: auto; line-height: 2em; }
+.prompt .modal-content-mv p{ width: 400px; font-size: 1.2em; text-align: left; color: white; font-weight: 300; margin-left: auto; margin-right: auto; }
+.prompt .mv-modal-link{ color: #064463; margin: 0px 20px; font-size: 1em; font-weight: 300; cursor:pointer; }
+.prompt .mv-button-blue{ background-color: #57BFE3; color: white; padding: 8px 40px; cursor: pointer; }
+.prompt .modal-close-cross{ float: right; margin-top: 10px; margin-right: 13px; color: white; font-size: 20px; cursor: pointer; }
+
+@media (min-width: 992px) { 
+	.prompt.modal-lg { width: 900px; }
+}
+@media (min-width: 768px) { 
+	.prompt.modal-dialog { width: 600px; margin: 30px auto; }
+	.prompt.modal-sm { width: 300px; } 
+}
