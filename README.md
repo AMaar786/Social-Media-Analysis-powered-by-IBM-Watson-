@@ -1,0 +1,2 @@
+# Social-Media-Analysis-powered-by-IBM-Watson-
+This repository contains java implementation of Social Media Analysis, which extracts from social media snippets about a business account whether it's on Facebook, Twitter or any public blog, additionally it extracts entities, keywords, concepts, it has competitor analysis that how are the competitor of that business are doing. The application is powered by IBM's Watson Cognitive APIs.
